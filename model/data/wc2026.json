@@ -1,5 +1,5 @@
 {
-  "_note": "Hand-seeded plausible 2026 field, NOT the official draw. Verify before sharing.",
+  "_note": "Synced from worldcup26.ir / rezarahiminia/worldcup2026 on GitHub. TBD slots are playoff qualifiers not yet determined.",
   "format": {
     "groups": 12,
     "teams_per_group": 4,
@@ -9,140 +9,93 @@
   },
   "groups": {
     "A": [
-      "USA",
-      "ARG",
-      "NGA",
-      "IRN"
+      "MEX",
+      "RSA",
+      "KOR",
+      "CZE"
     ],
     "B": [
-      "MEX",
-      "FRA",
-      "SRB",
-      "KOR"
+      "CAN",
+      "BIH",
+      "QAT",
+      "SUI"
     ],
     "C": [
-      "ESP",
-      "UKR",
-      "POL",
-      "NZL"
+      "BRA",
+      "MAR",
+      "HAI",
+      "SCO"
     ],
     "D": [
-      "CAN",
-      "BRA",
-      "TUR",
-      "EGY"
+      "USA",
+      "PAR",
+      "AUS",
+      "TUR"
     ],
     "E": [
-      "ENG",
-      "ECU",
-      "ALG",
-      "BOL"
+      "GER",
+      "CUW",
+      "CIV",
+      "ECU"
     ],
     "F": [
-      "POR",
-      "AUT",
-      "AUS",
-      "JAM"
+      "NED",
+      "JPN",
+      "SWE",
+      "TUN"
     ],
     "G": [
-      "NED",
-      "SEN",
-      "PAR",
-      "IRQ"
+      "BEL",
+      "EGY",
+      "IRN",
+      "NZL"
     ],
     "H": [
-      "GER",
-      "JPN",
-      "CIV",
-      "UZB"
+      "ESP",
+      "CPV",
+      "KSA",
+      "URU"
     ],
     "I": [
-      "BEL",
-      "DEN",
-      "CMR",
-      "PAN"
+      "FRA",
+      "SEN",
+      "IRQ",
+      "NOR"
     ],
     "J": [
-      "ITA",
-      "SUI",
-      "GHA",
-      "COD"
+      "ARG",
+      "ALG",
+      "AUT",
+      "JOR"
     ],
     "K": [
-      "CRO",
-      "MAR",
-      "TUN",
-      "KSA"
+      "POR",
+      "COD",
+      "UZB",
+      "COL"
     ],
     "L": [
-      "URU",
-      "COL",
-      "QAT",
-      "CRC"
+      "ENG",
+      "CRO",
+      "GHA",
+      "PAN"
     ]
   },
   "teams": [
-    {
-      "id": "USA",
-      "name": "United States",
-      "confederation": "CONCACAF",
-      "flag": "🇺🇸",
-      "group": "A",
-      "elo_seed": 1820,
-      "host": true
-    },
-    {
-      "id": "ARG",
-      "name": "Argentina",
-      "confederation": "CONMEBOL",
-      "flag": "🇦🇷",
-      "group": "A",
-      "elo_seed": 2105,
-      "host": false
-    },
-    {
-      "id": "NGA",
-      "name": "Nigeria",
-      "confederation": "CAF",
-      "flag": "🇳🇬",
-      "group": "A",
-      "elo_seed": 1760,
-      "host": false
-    },
-    {
-      "id": "IRN",
-      "name": "Iran",
-      "confederation": "AFC",
-      "flag": "🇮🇷",
-      "group": "A",
-      "elo_seed": 1760,
-      "host": false
-    },
     {
       "id": "MEX",
       "name": "Mexico",
       "confederation": "CONCACAF",
       "flag": "🇲🇽",
-      "group": "B",
-      "elo_seed": 1800,
+      "group": "A",
       "host": true
     },
     {
-      "id": "FRA",
-      "name": "France",
-      "confederation": "UEFA",
-      "flag": "🇫🇷",
-      "group": "B",
-      "elo_seed": 2085,
-      "host": false
-    },
-    {
-      "id": "SRB",
-      "name": "Serbia",
-      "confederation": "UEFA",
-      "flag": "🇷🇸",
-      "group": "B",
-      "elo_seed": 1760,
+      "id": "RSA",
+      "name": "South Africa",
+      "confederation": "CAF",
+      "flag": "🇿🇦",
+      "group": "A",
       "host": false
     },
     {
@@ -150,44 +103,15 @@
       "name": "South Korea",
       "confederation": "AFC",
       "flag": "🇰🇷",
-      "group": "B",
-      "elo_seed": 1755,
+      "group": "A",
       "host": false
     },
     {
-      "id": "ESP",
-      "name": "Spain",
+      "id": "CZE",
+      "name": "Czech Republic",
       "confederation": "UEFA",
-      "flag": "🇪🇸",
-      "group": "C",
-      "elo_seed": 2070,
-      "host": false
-    },
-    {
-      "id": "UKR",
-      "name": "Ukraine",
-      "confederation": "UEFA",
-      "flag": "🇺🇦",
-      "group": "C",
-      "elo_seed": 1770,
-      "host": false
-    },
-    {
-      "id": "POL",
-      "name": "Poland",
-      "confederation": "UEFA",
-      "flag": "🇵🇱",
-      "group": "C",
-      "elo_seed": 1740,
-      "host": false
-    },
-    {
-      "id": "NZL",
-      "name": "New Zealand",
-      "confederation": "OFC",
-      "flag": "🇳🇿",
-      "group": "C",
-      "elo_seed": 1600,
+      "flag": "🇨🇿",
+      "group": "A",
       "host": false
     },
     {
@@ -195,17 +119,87 @@
       "name": "Canada",
       "confederation": "CONCACAF",
       "flag": "🇨🇦",
-      "group": "D",
-      "elo_seed": 1750,
+      "group": "B",
       "host": true
+    },
+    {
+      "id": "BIH",
+      "name": "Bosnia and Herzegovina",
+      "confederation": "UEFA",
+      "flag": "🇧🇦",
+      "group": "B",
+      "host": false
+    },
+    {
+      "id": "QAT",
+      "name": "Qatar",
+      "confederation": "AFC",
+      "flag": "🇶🇦",
+      "group": "B",
+      "host": false
+    },
+    {
+      "id": "SUI",
+      "name": "Switzerland",
+      "confederation": "UEFA",
+      "flag": "🇨🇭",
+      "group": "B",
+      "host": false
     },
     {
       "id": "BRA",
       "name": "Brazil",
       "confederation": "CONMEBOL",
       "flag": "🇧🇷",
+      "group": "C",
+      "host": false
+    },
+    {
+      "id": "MAR",
+      "name": "Morocco",
+      "confederation": "CAF",
+      "flag": "🇲🇦",
+      "group": "C",
+      "host": false
+    },
+    {
+      "id": "HAI",
+      "name": "Haiti",
+      "confederation": "CONCACAF",
+      "flag": "🇭🇹",
+      "group": "C",
+      "host": false
+    },
+    {
+      "id": "SCO",
+      "name": "Scotland",
+      "confederation": "UEFA",
+      "flag": "🇬🇧",
+      "group": "C",
+      "host": false
+    },
+    {
+      "id": "USA",
+      "name": "United States",
+      "confederation": "CONCACAF",
+      "flag": "🇺🇸",
       "group": "D",
-      "elo_seed": 2025,
+      "host": true
+    },
+    {
+      "id": "PAR",
+      "name": "Paraguay",
+      "confederation": "CONMEBOL",
+      "flag": "🇵🇾",
+      "group": "D",
+      "host": false
+    },
+    {
+      "id": "AUS",
+      "name": "Australia",
+      "confederation": "AFC",
+      "flag": "🇦🇺",
+      "group": "D",
       "host": false
     },
     {
@@ -214,25 +208,30 @@
       "confederation": "UEFA",
       "flag": "🇹🇷",
       "group": "D",
-      "elo_seed": 1775,
       "host": false
     },
     {
-      "id": "EGY",
-      "name": "Egypt",
-      "confederation": "CAF",
-      "flag": "🇪🇬",
-      "group": "D",
-      "elo_seed": 1740,
-      "host": false
-    },
-    {
-      "id": "ENG",
-      "name": "England",
+      "id": "GER",
+      "name": "Germany",
       "confederation": "UEFA",
-      "flag": "🇬🇧",
+      "flag": "🇩🇪",
       "group": "E",
-      "elo_seed": 2015,
+      "host": false
+    },
+    {
+      "id": "CUW",
+      "name": "Curaçao",
+      "confederation": "CONCACAF",
+      "flag": "🇨🇼",
+      "group": "E",
+      "host": false
+    },
+    {
+      "id": "CIV",
+      "name": "Ivory Coast",
+      "confederation": "CAF",
+      "flag": "🇨🇮",
+      "group": "E",
       "host": false
     },
     {
@@ -241,61 +240,6 @@
       "confederation": "CONMEBOL",
       "flag": "🇪🇨",
       "group": "E",
-      "elo_seed": 1790,
-      "host": false
-    },
-    {
-      "id": "ALG",
-      "name": "Algeria",
-      "confederation": "CAF",
-      "flag": "🇩🇿",
-      "group": "E",
-      "elo_seed": 1730,
-      "host": false
-    },
-    {
-      "id": "BOL",
-      "name": "Bolivia",
-      "confederation": "CONMEBOL",
-      "flag": "🇧🇴",
-      "group": "E",
-      "elo_seed": 1640,
-      "host": false
-    },
-    {
-      "id": "POR",
-      "name": "Portugal",
-      "confederation": "UEFA",
-      "flag": "🇵🇹",
-      "group": "F",
-      "elo_seed": 2000,
-      "host": false
-    },
-    {
-      "id": "AUT",
-      "name": "Austria",
-      "confederation": "UEFA",
-      "flag": "🇦🇹",
-      "group": "F",
-      "elo_seed": 1795,
-      "host": false
-    },
-    {
-      "id": "AUS",
-      "name": "Australia",
-      "confederation": "AFC",
-      "flag": "🇦🇺",
-      "group": "F",
-      "elo_seed": 1730,
-      "host": false
-    },
-    {
-      "id": "JAM",
-      "name": "Jamaica",
-      "confederation": "CONCACAF",
-      "flag": "🇯🇲",
-      "group": "F",
-      "elo_seed": 1650,
       "host": false
     },
     {
@@ -303,44 +247,7 @@
       "name": "Netherlands",
       "confederation": "UEFA",
       "flag": "🇳🇱",
-      "group": "G",
-      "elo_seed": 1990,
-      "host": false
-    },
-    {
-      "id": "SEN",
-      "name": "Senegal",
-      "confederation": "CAF",
-      "flag": "🇸🇳",
-      "group": "G",
-      "elo_seed": 1810,
-      "host": false
-    },
-    {
-      "id": "PAR",
-      "name": "Paraguay",
-      "confederation": "CONMEBOL",
-      "flag": "🇵🇾",
-      "group": "G",
-      "elo_seed": 1720,
-      "host": false
-    },
-    {
-      "id": "IRQ",
-      "name": "Iraq",
-      "confederation": "AFC",
-      "flag": "🇮🇶",
-      "group": "G",
-      "elo_seed": 1660,
-      "host": false
-    },
-    {
-      "id": "GER",
-      "name": "Germany",
-      "confederation": "UEFA",
-      "flag": "🇩🇪",
-      "group": "H",
-      "elo_seed": 1965,
+      "group": "F",
       "host": false
     },
     {
@@ -348,116 +255,15 @@
       "name": "Japan",
       "confederation": "AFC",
       "flag": "🇯🇵",
-      "group": "H",
-      "elo_seed": 1825,
+      "group": "F",
       "host": false
     },
     {
-      "id": "CIV",
-      "name": "Ivory Coast",
-      "confederation": "CAF",
-      "flag": "🇨🇮",
-      "group": "H",
-      "elo_seed": 1720,
-      "host": false
-    },
-    {
-      "id": "UZB",
-      "name": "Uzbekistan",
-      "confederation": "AFC",
-      "flag": "🇺🇿",
-      "group": "H",
-      "elo_seed": 1670,
-      "host": false
-    },
-    {
-      "id": "BEL",
-      "name": "Belgium",
+      "id": "SWE",
+      "name": "Sweden",
       "confederation": "UEFA",
-      "flag": "🇧🇪",
-      "group": "I",
-      "elo_seed": 1950,
-      "host": false
-    },
-    {
-      "id": "DEN",
-      "name": "Denmark",
-      "confederation": "UEFA",
-      "flag": "🇩🇰",
-      "group": "I",
-      "elo_seed": 1840,
-      "host": false
-    },
-    {
-      "id": "CMR",
-      "name": "Cameroon",
-      "confederation": "CAF",
-      "flag": "🇨🇲",
-      "group": "I",
-      "elo_seed": 1710,
-      "host": false
-    },
-    {
-      "id": "PAN",
-      "name": "Panama",
-      "confederation": "CONCACAF",
-      "flag": "🇵🇦",
-      "group": "I",
-      "elo_seed": 1670,
-      "host": false
-    },
-    {
-      "id": "ITA",
-      "name": "Italy",
-      "confederation": "UEFA",
-      "flag": "🇮🇹",
-      "group": "J",
-      "elo_seed": 1945,
-      "host": false
-    },
-    {
-      "id": "SUI",
-      "name": "Switzerland",
-      "confederation": "UEFA",
-      "flag": "🇨🇭",
-      "group": "J",
-      "elo_seed": 1850,
-      "host": false
-    },
-    {
-      "id": "GHA",
-      "name": "Ghana",
-      "confederation": "CAF",
-      "flag": "🇬🇭",
-      "group": "J",
-      "elo_seed": 1700,
-      "host": false
-    },
-    {
-      "id": "COD",
-      "name": "DR Congo",
-      "confederation": "CAF",
-      "flag": "🇨🇩",
-      "group": "J",
-      "elo_seed": 1680,
-      "host": false
-    },
-    {
-      "id": "CRO",
-      "name": "Croatia",
-      "confederation": "UEFA",
-      "flag": "🇭🇷",
-      "group": "K",
-      "elo_seed": 1905,
-      "host": false
-    },
-    {
-      "id": "MAR",
-      "name": "Morocco",
-      "confederation": "CAF",
-      "flag": "🇲🇦",
-      "group": "K",
-      "elo_seed": 1860,
+      "flag": "🇸🇪",
+      "group": "F",
       "host": false
     },
     {
@@ -465,8 +271,55 @@
       "name": "Tunisia",
       "confederation": "CAF",
       "flag": "🇹🇳",
-      "group": "K",
-      "elo_seed": 1695,
+      "group": "F",
+      "host": false
+    },
+    {
+      "id": "BEL",
+      "name": "Belgium",
+      "confederation": "UEFA",
+      "flag": "🇧🇪",
+      "group": "G",
+      "host": false
+    },
+    {
+      "id": "EGY",
+      "name": "Egypt",
+      "confederation": "CAF",
+      "flag": "🇪🇬",
+      "group": "G",
+      "host": false
+    },
+    {
+      "id": "IRN",
+      "name": "Iran",
+      "confederation": "AFC",
+      "flag": "🇮🇷",
+      "group": "G",
+      "host": false
+    },
+    {
+      "id": "NZL",
+      "name": "New Zealand",
+      "confederation": "OFC",
+      "flag": "🇳🇿",
+      "group": "G",
+      "host": false
+    },
+    {
+      "id": "ESP",
+      "name": "Spain",
+      "confederation": "UEFA",
+      "flag": "🇪🇸",
+      "group": "H",
+      "host": false
+    },
+    {
+      "id": "CPV",
+      "name": "Cape Verde",
+      "confederation": "CAF",
+      "flag": "🇨🇻",
+      "group": "H",
       "host": false
     },
     {
@@ -474,8 +327,7 @@
       "name": "Saudi Arabia",
       "confederation": "AFC",
       "flag": "🇸🇦",
-      "group": "K",
-      "elo_seed": 1680,
+      "group": "H",
       "host": false
     },
     {
@@ -483,8 +335,95 @@
       "name": "Uruguay",
       "confederation": "CONMEBOL",
       "flag": "🇺🇾",
-      "group": "L",
-      "elo_seed": 1895,
+      "group": "H",
+      "host": false
+    },
+    {
+      "id": "FRA",
+      "name": "France",
+      "confederation": "UEFA",
+      "flag": "🇫🇷",
+      "group": "I",
+      "host": false
+    },
+    {
+      "id": "SEN",
+      "name": "Senegal",
+      "confederation": "CAF",
+      "flag": "🇸🇳",
+      "group": "I",
+      "host": false
+    },
+    {
+      "id": "IRQ",
+      "name": "Iraq",
+      "confederation": "AFC",
+      "flag": "🇮🇶",
+      "group": "I",
+      "host": false
+    },
+    {
+      "id": "NOR",
+      "name": "Norway",
+      "confederation": "UEFA",
+      "flag": "🇳🇴",
+      "group": "I",
+      "host": false
+    },
+    {
+      "id": "ARG",
+      "name": "Argentina",
+      "confederation": "CONMEBOL",
+      "flag": "🇦🇷",
+      "group": "J",
+      "host": false
+    },
+    {
+      "id": "ALG",
+      "name": "Algeria",
+      "confederation": "CAF",
+      "flag": "🇩🇿",
+      "group": "J",
+      "host": false
+    },
+    {
+      "id": "AUT",
+      "name": "Austria",
+      "confederation": "UEFA",
+      "flag": "🇦🇹",
+      "group": "J",
+      "host": false
+    },
+    {
+      "id": "JOR",
+      "name": "Jordan",
+      "confederation": "AFC",
+      "flag": "🇯🇴",
+      "group": "J",
+      "host": false
+    },
+    {
+      "id": "POR",
+      "name": "Portugal",
+      "confederation": "UEFA",
+      "flag": "🇵🇹",
+      "group": "K",
+      "host": false
+    },
+    {
+      "id": "COD",
+      "name": "DR Congo",
+      "confederation": "CAF",
+      "flag": "🇨🇩",
+      "group": "K",
+      "host": false
+    },
+    {
+      "id": "UZB",
+      "name": "Uzbekistan",
+      "confederation": "AFC",
+      "flag": "🇺🇿",
+      "group": "K",
       "host": false
     },
     {
@@ -492,26 +431,39 @@
       "name": "Colombia",
       "confederation": "CONMEBOL",
       "flag": "🇨🇴",
-      "group": "L",
-      "elo_seed": 1885,
+      "group": "K",
       "host": false
     },
     {
-      "id": "QAT",
-      "name": "Qatar",
-      "confederation": "AFC",
-      "flag": "🇶🇦",
+      "id": "ENG",
+      "name": "England",
+      "confederation": "UEFA",
+      "flag": "🇬🇧",
       "group": "L",
-      "elo_seed": 1690,
       "host": false
     },
     {
-      "id": "CRC",
-      "name": "Costa Rica",
+      "id": "CRO",
+      "name": "Croatia",
+      "confederation": "UEFA",
+      "flag": "🇭🇷",
+      "group": "L",
+      "host": false
+    },
+    {
+      "id": "GHA",
+      "name": "Ghana",
+      "confederation": "CAF",
+      "flag": "🇬🇭",
+      "group": "L",
+      "host": false
+    },
+    {
+      "id": "PAN",
+      "name": "Panama",
       "confederation": "CONCACAF",
-      "flag": "🇨🇷",
+      "flag": "🇵🇦",
       "group": "L",
-      "elo_seed": 1680,
       "host": false
     }
   ]

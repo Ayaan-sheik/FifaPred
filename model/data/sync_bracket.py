@@ -33,7 +33,8 @@ FIFA_CODE_TO_CONF: dict[str, str] = {
     "SCO": "UEFA", "GER": "UEFA", "NED": "UEFA", "FRA": "UEFA", "BEL": "UEFA",
     "ESP": "UEFA", "ENG": "UEFA", "SUI": "UEFA", "CRO": "UEFA", "AUT": "UEFA",
     "NOR": "UEFA", "TUR": "UEFA", "UKR": "UEFA", "SRB": "UEFA", "POL": "UEFA",
-    "POR": "UEFA", "ITA": "UEFA", "DEN": "UEFA",
+    "POR": "UEFA", "ITA": "UEFA", "DEN": "UEFA", "BIH": "UEFA", "SWE": "UEFA",
+    "CZE": "UEFA",
     # CONMEBOL
     "BRA": "CONMEBOL", "ARG": "CONMEBOL", "COL": "CONMEBOL", "ECU": "CONMEBOL",
     "PAR": "CONMEBOL", "URU": "CONMEBOL", "CHI": "CONMEBOL", "BOL": "CONMEBOL",
@@ -48,7 +49,7 @@ FIFA_CODE_TO_CONF: dict[str, str] = {
     # CAF
     "RSA": "CAF", "MAR": "CAF", "TUN": "CAF", "SEN": "CAF", "EGY": "CAF",
     "GHA": "CAF", "CIV": "CAF", "ALG": "CAF", "NGA": "CAF", "CMR": "CAF",
-    "CPV": "CAF", "COD": "CAF",
+    "CPV": "CAF", "COD": "CAF", "DRC": "CAF",
     # OFC
     "NZL": "OFC",
 }
@@ -62,6 +63,17 @@ ISO2_OVERRIDES: dict[str, str] = {
 }
 # Direct emoji overrides when no 2-letter code is a good fit
 EMOJI_OVERRIDES: dict[str, str] = {}
+
+# Maps GitHub CSV placeholder names → (fifa_code, canonical_name, iso2).
+# Update this when intercontinental/UEFA playoff results are confirmed.
+TBD_RESOLUTIONS: dict[str, tuple[str, str, str]] = {
+    "UEFA Path A Winner": ("BIH", "Bosnia and Herzegovina", "BA"),
+    "UEFA Path B Winner": ("SWE", "Sweden", "SE"),
+    "UEFA Path C Winner": ("TUR", "Turkey", "TR"),
+    "UEFA Path D Winner": ("CZE", "Czech Republic", "CZ"),
+    "IC Path 1 Winner":   ("COD", "DR Congo", "CD"),
+    "IC Path 2 Winner":   ("IRQ", "Iraq", "IQ"),
+}
 
 
 def iso2_to_flag(iso2: str) -> str:
@@ -99,6 +111,11 @@ def build_bracket(teams_raw: list[dict]) -> dict:
         name = row["name_en"].strip()
         group = row["groups"].strip()
         iso2 = row["iso2"].strip()
+
+        # Resolve TBD placeholders to confirmed qualifiers
+        if tid == "TBD" and name in TBD_RESOLUTIONS:
+            tid, name, iso2 = TBD_RESOLUTIONS[name]
+
         conf = FIFA_CODE_TO_CONF.get(tid, "Other")
 
         # TBD playoff slots: make IDs unique per group so by_id dict doesn't collide

@@ -85,6 +85,13 @@ TEAM_NAME_MAP: dict[str, str] = {
     "Haiti": "Haiti",
     "Curaçao": "Curaçao",
     "Curacao": "Curaçao",
+    # TBD playoff qualifiers — confirmed before group stage
+    "Bosnia and Herzegovina": "Bosnia and Herzegovina",
+    "Czech Republic": "Czech Republic",
+    "Iraq": "Iraq",
+    "Sweden": "Sweden",
+    "Turkey": "Turkey",
+    "Democratic Republic of the Congo": "DR Congo",
 }
 
 
