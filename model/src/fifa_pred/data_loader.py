@@ -17,6 +17,7 @@ import pandas as pd
 
 DATA_DIR = Path(__file__).resolve().parents[2] / "data"
 RAW_CSV = DATA_DIR / "raw" / "results.csv"
+LIVE_CSV = DATA_DIR / "wc2026_live.csv"
 BRACKET_JSON = DATA_DIR / "wc2026.json"
 CSV_URL = "https://raw.githubusercontent.com/martj42/international_results/master/results.csv"
 
@@ -103,6 +104,24 @@ def load_results(
     )
     years_ago = (ref - df["date"]).dt.days / 365.25
     df["weight"] = np.exp(-xi * years_ago.clip(lower=0))
+    return df
+
+
+def load_live_results(path: Path = LIVE_CSV) -> pd.DataFrame:
+    """Load wc2026_live.csv if it exists; return empty DataFrame otherwise.
+
+    Parses the ``neutral`` column from the CSV rather than forcing it to True,
+    so that co-host teams (USA/MEX/CAN) playing in their own country correctly
+    retain ``neutral=False`` and the home-advantage parameter is applied.
+    """
+    if not path.exists():
+        return pd.DataFrame()
+    df = pd.read_csv(path, parse_dates=["date"])
+    df["home_score"] = df["home_score"].astype(int)
+    df["away_score"] = df["away_score"].astype(int)
+    # `neutral` may be a Python bool or "TRUE"/"FALSE" string depending on
+    # how the CSV was written — normalise the same way load_results() does.
+    df["neutral"] = df["neutral"].astype(str).str.upper().eq("TRUE")
     return df
 
 

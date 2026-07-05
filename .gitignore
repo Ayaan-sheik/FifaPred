@@ -1,0 +1,22 @@
+# Dataset cache (downloaded by wc_dataset.py, not tracked in git)
+model/data/wc2026_dataset/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+dist/
+build/
+
+# Pytest
+.pytest_cache/
+
+# Node / web
+node_modules/
+web/.next/
+web/out/
+
+# Misc
+.DS_Store
+*.csv.bak
